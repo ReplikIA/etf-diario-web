@@ -1,0 +1,9 @@
+<!doctype html><html lang="es"><head><title>Autorización TikTok</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font:16px/1.6 system-ui;max-width:640px;margin:40px auto;padding:0 16px;color:#222}code{background:#eee;padding:2px 6px;border-radius:4px;word-break:break-all}</style></head><body>
+<h1>Autorización recibida</h1>
+<p>Copia este código y pégalo en el script <code>tools/get_token.py</code>:</p>
+<p><code id="c">…</code></p><p id="e"></p>
+<script>
+const p=new URLSearchParams(location.search);
+document.getElementById('c').textContent=p.get('code')||'(sin código)';
+if(p.get('error'))document.getElementById('e').textContent='Error: '+p.get('error_description');
+</script></body></html>
